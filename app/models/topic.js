@@ -6,9 +6,11 @@ var Topic = DS.Model.extend({
 });
 
 Topic.reopenClass({
-  {id: 1, name: authentication, category: 2},
-  {id: 2, name: permissions, category: 2},
-  {id: 3, name: CRUD, category: 2},
+  FIXTURES: [
+    {id: 1, name: "authentication", category: 1},
+    {id: 2, name: "permissions", category: 2},
+    {id: 3, name: "CRUD", category: 3},
+  ]
 });
 
 export default Topic;
