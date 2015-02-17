@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 var Category = DS.Model.extend({
   name: DS.attr('string'),
-  topics: DS.hasMany('topic')
+  topics: DS.hasMany('topic', { async: true })
 });
 
 Category.reopenClass({
